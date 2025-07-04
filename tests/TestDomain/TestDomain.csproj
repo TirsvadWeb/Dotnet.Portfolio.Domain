@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TirsvadWeb.Portfolio.Domain\TirsvadWeb.Portfolio.Domain.csproj" />
+    <ProjectReference Include="..\..\src\TirsvadWeb.Portfolio.Domain\TirsvadWeb.Portfolio.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace TirsvadWeb.Portfolio.Domain.Entities;
+﻿namespace TirsvadWeb.Portfolio.Domain.Interfaces;
 
 /// <summary>
 /// Interface for entities that use a GUID as their unique identifier.

@@ -1,4 +1,6 @@
-﻿namespace TirsvadWeb.Portfolio.Domain.Entities;
+﻿using TirsvadWeb.Portfolio.Domain.Interfaces;
+
+namespace TirsvadWeb.Portfolio.Domain.Entities;
 
 /// <summary>
 /// Represents the base entity type with a unique identifier.

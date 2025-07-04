@@ -20,29 +20,23 @@ namespace TestDomain
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void UriString_InvalidUri_ShouldThrowArgumentException()
         {
             // Arrange
             var invalidUri = "not a valid uri";
 
-            // Act
-            _ = new UriString(invalidUri);
-
-            // Assert is handled by ExpectedException
+            // Act & Assert
+            Assert.ThrowsException<ArgumentException>(() => new UriString(invalidUri));
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void UriString_RelativeUri_ShouldThrowArgumentException()
         {
             // Arrange
             var relativeUri = "/relative/path";
 
-            // Act
-            _ = new UriString(relativeUri);
-
-            // Assert is handled by ExpectedException
+            // Act & Assert
+            Assert.ThrowsException<ArgumentException>(() => new UriString(relativeUri));
         }
     }
 }

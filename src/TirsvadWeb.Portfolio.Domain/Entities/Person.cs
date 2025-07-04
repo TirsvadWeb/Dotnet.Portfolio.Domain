@@ -1,9 +1,11 @@
-﻿namespace TirsvadWeb.Portfolio.Domain.Entities;
+﻿using TirsvadWeb.Portfolio.Domain.Interfaces;
+
+namespace TirsvadWeb.Portfolio.Domain.Entities;
 
 /// <summary>
 /// Represents a person entity in the portfolio domain.
 /// </summary>
-public class Person : BaseEntity
+public class Person : BaseEntity, IPerson
 {
     /// <summary>
     /// Gets the full name of the person.
@@ -32,20 +34,26 @@ public class Person : BaseEntity
     private readonly List<Skill> _skills = new();
     private readonly List<Education> _educations = new();
 
-    /// <summary>
-    /// Gets the collection of projects associated with the person.
-    /// </summary>
-    public IReadOnlyCollection<Project> Projects => _projects;
+    ///// <summary>
+    ///// Gets the collection of projects associated with the person.
+    ///// </summary>
+    //public IReadOnlyCollection<Project> Projects => _projects;
 
-    /// <summary>
-    /// Gets the collection of skills associated with the person.
-    /// </summary>
-    public IReadOnlyCollection<Skill> Skills => _skills;
+    ///// <summary>
+    ///// Gets the collection of skills associated with the person.
+    ///// </summary>
+    //public IReadOnlyCollection<Skill> Skills => _skills;
 
-    /// <summary>
-    /// Gets the collection of education records associated with the person.
-    /// </summary>
-    public IReadOnlyCollection<Education> Educations => _educations;
+    ///// <summary>
+    ///// Gets the collection of education records associated with the person.
+    ///// </summary>
+    //public IReadOnlyCollection<Education> Educations => _educations;
+
+    IReadOnlyCollection<IProject> IPerson.Projects => (IReadOnlyCollection<IProject>)_projects;
+
+    IReadOnlyCollection<ISkill> IPerson.Skills => (IReadOnlyCollection<ISkill>)_skills;
+
+    IReadOnlyCollection<IEducation> IPerson.Educations => _educations;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Person"/> class.

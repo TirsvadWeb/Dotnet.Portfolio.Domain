@@ -50,6 +50,9 @@
             <PackagePath>\</PackagePath>
         </None>
     </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Exceptions\" />
+    </ItemGroup>
     <PropertyGroup>
         <RelativeNugetPath>..\..\..\..\..\nuget</RelativeNugetPath>
     </PropertyGroup>

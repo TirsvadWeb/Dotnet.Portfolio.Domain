@@ -6,6 +6,20 @@ TirsvadWeb.Portfolio.Domain is a .NET class library that provides a robust, exte
 It defines core entities such as Person, Project, Education, Skill, and WorkExperience, supporting strong typing, validation, and clean architecture principles.
 The library is suitable for use in web applications, APIs, or any .NET-based solution requiring structured portfolio data.
 
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+    - [NuGet Package](#nuget-package)
+    - [Clone the repo](#clone-the-repo)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [Bug / Issue Reporting](#bug--issue-reporting)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
+
 ## Getting Started
 
 ### Prerequisites
@@ -25,6 +39,27 @@ Then, run your package manager's install command to download and install the mod
 
 ```bash
 git clone git@github.com:TirsvadWeb/Dotnet.Portfolio.Domain.git
+```
+
+## 📂 Folder Structure
+```
+TirsvadWeb.Portfolio.Domain/
+├── 📄 docs                                // Documentation files
+│   └── 📄 doxygen                         // Doxygen output
+├── 🖼️ images                              // Images used in documentation
+├── 📂 src                                 // Source code for the library
+│   └── 📦 TirsvadWeb.Portfolio.Domain     // Main library folder
+│       ├── 📦 Entities                    // Contains domain entities
+│       ├── 📦 Exceptions                  // Custom exceptions for the domain
+│       ├── 📦 Interfaces                  // Interfaces for domain services
+│       ├── 📦 Services                    // Domain services
+│       └── 📦 ValueObjects                // Value objects for the domain
+└── 📂 tests
+    └── 🧪 TestDomain                      // Unit tests for the library
+        ├── 🧪 Entities                    // Contains tests for domain entities
+        ├── 🧪 Exceptions                  // Tests for custom exceptions
+        ├── 🧪 Interfaces                  // Tests for domain interfaces
+        └── 🧪 Services                    // Tests for domain services
 ```
 
 ## Contributing
