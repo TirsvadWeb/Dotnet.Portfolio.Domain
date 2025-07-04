@@ -13,7 +13,7 @@
         <Company>TirsvadWeb</Company>
         <PackageIcon>logo.png</PackageIcon>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-        <RepositoryUrl>https://github.com/TirsvadWeb/Dotnet.JwtAuth.Domain</RepositoryUrl>
+        <RepositoryUrl>https://github.com/TirsvadWeb/Dotnet.Portfolio.Domain</RepositoryUrl>
         <PackageTags>Library</PackageTags>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
