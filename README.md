@@ -93,7 +93,7 @@ If you encounter a bug or have an issue to report, please follow these steps:
   Once all details are filled in, click **"Submit new issue"** to report it.  
 
 ## License
-Distributed under the GPL-3.0 [License][license-url].
+Distributed under the AGPL-3.0 [License][license-url].
 
 ## Contact
 Jens Tirsvad Nielsen - [LinkedIn][linkedin-url]
